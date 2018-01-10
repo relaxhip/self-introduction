@@ -1,0 +1,118 @@
+/*@media screen and (min-width: 960px) {*/
+
+/*----------Pre Set-----------*/
+
+	.fixed-wifth {
+		width: 1200px;
+		margin: auto;
+	}
+	.col-2 {
+		width: calc(100% / 2 -30px);
+		float: left;
+		margin: 0 15px;
+	}
+	.col-3 {
+		width: calc(100% / 3 -30px);
+		float: left;
+		margin: 0 15px;
+	}
+	.col- {
+		width: calc(100% / 4 -30px);
+		float: left;
+		margin: 0 15px;
+	}
+	.wraper {
+		position: relative;
+		width: 100%;
+		/*height: 1000px;
+		background-image: url("../images/bg.jpg");
+		background-repeat: no-repeat;
+		-webkit-background-size: cover;
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: center;*/
+	}
+
+	/*-----------HEADER-------*/
+	header {
+		position: relative;
+		height: 100vh;
+		text-align: center;
+		background-image: url(../images/bg.jpg);
+		background-repeat: no-repeat;
+		-webkit-background-size: cover;
+		background-size: cover;
+		background-position: center;
+		/*word-spacing: 2em;*/
+		/*letter-spacing: 5px;*/
+		padding-top: 18%;	
+	}
+
+	header h1 {
+		font-size: 64px;
+		font-weight: 700;
+		text-shadow: 5px 5px 10px #000;
+	}
+	header p {
+		font-size: 40px;
+		margin-bottom: 30px;
+		height: 20px;
+		/*color: black;*/
+		padding-top: 50px;
+		text-shadow: 5px 5px 10px #000;
+	}
+
+	.arrow-down {
+		position: absolute;
+		bottom: 80px;
+		left: 50%;
+		width: 50px;
+		animation: arrow 4s infinite;
+	}
+	.arrow-down i {
+		color: black;
+	}
+	.arrow-down i:hover {
+		color: gray;
+	}
+	@keyframes arrow {
+		0% {bottom: 80px}
+		50% {bottom: 50px}
+		100% {bottom: 80px}
+	}
+	/*------------NAV-----------*/
+	nav {
+		background-color:rgba(32,34,224,0.5) ;
+	}
+	nav .home {
+		float: left;
+		height: 40px;
+		line-height: 40px;
+		color: white;
+		font-size: 28px;
+		font-weight: 700;
+		margin: 12px 0;
+		padding: 0 30px;
+	}
+	nav .pink {
+		color: pink;
+		font-size: 50px;
+	}
+	nav ul {
+		float: right;
+		padding-right: 40px;
+	}
+	nav li {
+		float: left;
+		list-style-type: none;
+	}
+	nav a {
+		display: block;
+		height: 70px;
+		line-height: 70px;
+		color: white;
+		text-align: center;
+		padding:0 20px;
+
+	}
+/*}*/

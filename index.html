@@ -2,14 +2,32 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Ako's Self-Introduction</title>
+	<title>Ako's Self-Introduction</title> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/desktop.css">
 	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/main.js"></script>
 </head>
 <body>
-	<div class="wrapper">
-		<nav class="full-width">
-			
+	<div class="wraper">
+		<header class="full-width">
+			<h1>It's AKo's Profile</h1>
+			<p><span class="blinker"></span></p>
+			<div class="arrow-down">
+				<i class="fa fa-angle-double-down fa-4x"></i>
+			</div>
+		</header>
+		<nav class="full-width clearfix">
+			<div class="fixed-width">
+				<a href="javascript:;" class="home" data-target="home"><span class="pink">Ako's </span>Profile</a>
+				<ul>
+					<li><a href="javascript:;" class="profile" data-target="profile">Profile</a></li>
+					<li><a href="javascript:;" class="experience" data-target="experience">Experience</a></li>
+					<li><a href="javascript:;" class="skill" data-targer="skill">Skill</a></li>
+					<li><a href="javascript:;" class="contact" data-target="contact">Contact</a></li>
+				</ul>
+			</div>
 		</nav>
 	</div>
 </body>
