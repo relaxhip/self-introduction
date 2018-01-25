@@ -6,29 +6,174 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/desktop.css">
+	<link rel="stylesheet" href="slick/slick.css">
+	<link rel="stylesheet" href="slick/slick-theme.css">
 	<script src="js/jquery-1.12.4.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="slick/slick.min.js"></script>
 </head>
 <body>
 	<div class="wraper">
 		<header class="full-width">
 			<h1>It's AKo's Profile</h1>
+			<div class="header-spacer"></div>
 			<p><span class="blinker"></span></p>
 			<div class="arrow-down">
 				<i class="fa fa-angle-double-down fa-4x"></i>
 			</div>
 		</header>
-		<nav class="full-width clearfix">
+		<nav class="full-width clearfix ">
 			<div class="fixed-width">
-				<a href="javascript:;" class="home" data-target="home"><span class="pink">Ako's </span>Profile</a>
+				<a href="javascript:;" class="home"><span class="pink">Ako's </span>Profile</a>
 				<ul>
-					<li><a href="javascript:;" class="profile" data-target="profile">Profile</a></li>
-					<li><a href="javascript:;" class="experience" data-target="experience">Experience</a></li>
-					<li><a href="javascript:;" class="skill" data-targer="skill">Skill</a></li>
-					<li><a href="javascript:;" class="contact" data-target="contact">Contact</a></li>
+					<li><a href="javascript:;" id="profile" data-target="profile">PROFILE</a></li>
+					<li><a href="javascript:;" id="cv" data-target="cv">CURRICULUM VITAE</a></li>
+					<li><a href="javascript:;" id="skill" data-target="skill">SKILL</a></li>
+					<li><a href="javascript:;" id="contact" data-target="contact">CONTACT</a></li>
 				</ul>
 			</div>
 		</nav>
+
+		<div class="profile clearfix">
+			<div class="fixed-width">
+				<h1>Personal Profile</h1>
+				<div class="spacer"></div>
+				<h3>Life and learn</h3>			
+				<div class="slider col-2">
+					<img src="images/selfie_01.jpg" alt="">
+					<img src="images/selfie_02.jpg" alt="">
+					<img src="images/selfie_03.jpg" alt="">
+					<img src="images/selfie_04.jpg" alt="">
+				</div>		
+				<div class="profile-right col-2">
+					<p>我是何元誠，79年次，7年級尾段班，剛好接上人稱草莓族的族群之一。</p><br>
+					<p>2014年從台北實踐大學財經系畢業，迄今為止做了幾樣工作,主要都為會計出納相關的工作事項，但做了一段時間，知道餓不死，但也吃不飽，直到最近一份工作的公司出現狀況，並把我資遣後，有了一個機會。</p><br>
+					<p>因有非自願離職身分，讓我鼓起了勇氣接觸曾經想學習，但卻沒碰觸過的東西，"程式語言"。</p><br>
+					<p>剛失業的第一個月，在某天跟女朋友討論到了程式這部分，女朋友本身算是走這塊的，且周遭不少工程師的朋友，知道這一塊如果學起來確實能賺到錢，且不像是我原先的工作，就算做個三五年，可能還是沒多少，旦起初女朋友只是說說而已，沒想到我在這個月自學C語言下，真的學出興趣了。</p><br>
+					<p>在學習了兩個禮拜後，因需要做失業認定，詢問下知道了有職訓的管道，加上第一次認定前的求職詢問到一間網頁資訊公司，告訴了我所需的最基本技能。</p><br>
+					<p>就是目前正在學習的網頁前端技能，HTML、CSS、JS、jQuery等...於是我開始自學了約略兩個禮拜，碰巧這時看到了就服站有職訓的課程，正好是我正想要的前端語言，於是開始了兩個月的前端技能樹的升級！</p><br>
+					<p>從完全的門外漢，到可以做出東西出來。</p><br>
+					<p>在這兩個月時間，其實會做到有瓶頸，DEBUG到煩躁，但好險遇到了兩位好老師，李老師及呉老師，老師毫不藏私的傾囊相授，真的獲益良多！ 到現在已經可以自己獨立寫出基本的網頁架構及版型，真的完全沒想過我並非本科生但卻能做到這些事。</p><br>
+					<p>故事，才正要開始呢，因為再次的學習，找到了真正的興趣，往後的人生，也許真的會更加不同！</p>
+				</div>
+			</div>	
+		</div>
+		<div class="cv clearfix">
+			<div class="fixed-width">
+				<h1>CURRICULUM VITAE</h1>
+				<div class="spacer"></div>
+				<h3>Wish you an endless view to cheer your eyes, then one more story mount and higher rise.</h3>
+				
+				<div class="cv-main">
+					<div class="cv-title"><h3>EDUCATION</h3></div>
+					<div class="cv-content">
+						<div class="exp">
+							<h5 class="exp-name">
+								<strong>勞動部 網頁設計職訓課程　　</strong>
+								<span class="right"><i class="fa fa-calendar">2017/11 ~ 2018/01</i></span>
+							</h5>
+						</div>
+						<div class="exp">
+							<h5 class="exp-name">
+								<strong>私立實踐大學 財務金融學系　　　</strong>
+								<span class="right"><i class="fa fa-calendar">2008 ~ 2013</i></span>
+							</h5>
+						</div>
+						<div class="exp">
+							<h5 class="exp-name">
+								<strong>新北市立土城清水高級中學 普通科　　　</strong>
+								<span class="right"><i class="fa fa-calendar">2005 ~ 2008</i></span>
+							</h5>
+						</div>
+					</div>
+				</div>
+				<div class="cv-main">
+					<div class="cv-title">
+						<h3>EXPERIENCE</h3>
+					</div>
+					<div class="cv-content">
+						<div class="exp">
+							<h5 class="exp-name">
+								<strong>帕諾斯有限公司 央廚會計　　　</strong>
+								<span class="right"><i class="fa fa-calendar">2017/08 ~ 2017/10</i></span>
+							</h5>
+						</div>
+						<div class="exp">
+							<h5 class="exp-name">
+								<strong>吉楊工程有限公司 裝機工程師　　　</strong>
+								<span class="right"><i class="fa fa-calendar">2017/02 ~ 2017/08</i></span>
+							</h5>
+						</div>
+						<div class="exp">
+							<h5 class="exp-name">
+								<strong>中和環球股份有限公司 財務課/財務專員　　</strong>
+								<span class="right"><i class="fa fa-calendar">2015/08 ~ 2017/02</i></span>
+							</h5>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<div class="skill clearfix">
+			<div class="fixed-width">
+				<h1>Skill</h1>
+				<div class="spacer"></div>
+				<h3>To do a better job, you must broaden your knowledge and sharpen your skills.</h3>
+				<div class="skill-chart">
+					<div class="chart-part" style="left: 0%">
+						<div>Begin</div>
+					</div>
+					<div class="chart-part" style="left: 25%">
+						<div>Good</div>
+					</div>
+					<div class="chart-part" style="left: 50%">
+						<div>Great</div>
+					</div>
+					<div class="chart-part" style="left: 75%">
+						<div>Excellent</div>
+					</div>
+					<div id="bar-1" class="bar" style="top: 12%">
+						<span class="skill-name">HTML</span>
+					</div>
+					<div id="bar-2" class="bar" style="top: 27%">
+						<span class="skill-name">CSS</span>
+					</div>
+					<div id="bar-3" class="bar" style="top: 42%">
+						<span class="skill-name">Sass</span>
+					</div>
+					<div id="bar-4" class="bar" style="top: 57%">
+						<span class="skill-name">JS/JQuery</span>
+					</div>
+					<div id="bar-5" class="bar" style="top: 72%">
+						<span class="skill-name">Vue</span>
+					</div>
+					<div id="bar-6" class="bar" style="top: 87%">
+						<span class="skill-name">Git</span>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
+	<div class="contact clearfix full-width">
+		<h1>CONTACT</h1>
+		<div class="spacer"></div>
+		<div class="col-2 left">
+			<h2>Please relax to contact me at anytime.</h2>
+			<p><span class="fa fa-map-marker"></span>Tucheng Dist,New Taipei City,Taiwan</p>
+			<p><span class="fa fa-mobile"></span>+886 918806476</p>
+			<p><span class="fa fa-envelope-o"></span>relaxhip@gmail.com</p>
+		</div>
+		<div class="col-2 right">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14467.940832765209!2d121.43332268649915!3d24.96661789188909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681cd4c4364137%3A0x56eced90cb90496b!2zMjM25paw5YyX5biC5Zyf5Z-O5Y2A!5e0!3m2!1szh-TW!2stw!4v1516880187449" width="500" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+	</div>
+	<footer class="clearfix">
+		<div class="footer-way">
+			<div class="col-3"><a href="https://www.facebook.com/ako0905" target="_blank"><span class="fa fa-facebook fa-2x"></span></a></div>
+			<div class="col-3"><a href="https://github.com/relaxhip" target="_blank"><span class="fa fa-github fa-2x"></span></a></div>
+			<div class="col-3"><a href="http://akoho.10g.com.tw/" target="_blank"><span class="fa fa-sitemap fa-2x"></span></a></div>
+		</div>	
+		<p>Ako He ©2018 All rights reserved.</p>	
+	</footer>
 </body>
 </html>
